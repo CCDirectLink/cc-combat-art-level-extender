@@ -1,5 +1,5 @@
 {
 	"name" : "Party Combat Art Level Extender",
-	"main" : "mod.js",
-	"version" : "2.0.0"
+	"prestart" : "mod.js",
+	"version" : "3.0.0"
 }
