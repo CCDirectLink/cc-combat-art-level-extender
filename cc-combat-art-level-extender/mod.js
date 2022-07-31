@@ -20,8 +20,9 @@ sc.PartyMemberEntity.inject({
 		this.setCurrentAnim("charge", false, null, true);
 		this.animationFixed = true;
 		this.timer.action = -1;
-		const artName = this.model.getCombatArtName(currentAction);
+		let artName = this.model.getCombatArtName(currentAction);
 		if (artName && sc.options.get("party-combat-arts") != sc.PARTY_COMBAT_ARTS.NONE) {
+			artName = artName.toString();
 			const artDisplayBox = new sc.SmallEntityBox(this, artName, 1);
 			artDisplayBox.stopRumble();
 			ig.gui.addGuiElement(artDisplayBox)
